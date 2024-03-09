@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">WeLearn</string>
+    <string name="HomeWelcomeText">Welcome to WeLearn</string>
+    <string name="Login">Login</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
