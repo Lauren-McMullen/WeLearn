@@ -5,31 +5,53 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00000000"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/Welcometext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
         android:text="@string/HomeWelcomeText"
+        android:fontFamily="sans-serif-black"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Login"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="412dp" />
+        android:backgroundTint="#F3B7AC"
+        app:layout_constraintBottom_toTopOf="@+id/signupbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcometext" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signupbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
         android:text="@string/sign_up"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="480dp" />
+        android:backgroundTint="#F3B7AC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/Welcometext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
