@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_dialog"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/login_popup"
     android:background="@color/light_pink">
 
     <LinearLayout
@@ -21,44 +21,52 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/porkh"
-            android:textSize="32"
             android:layout_marginStart="10dp"
-            android:text="@string/enter_your_username" />
+            android:fontFamily="@font/porkh"
+            android:text="@string/enter_your_username"
+            android:textSize="32dp" />
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="@string/username" />
+            android:inputType="text" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32"
             android:layout_marginStart="10dp"
             android:fontFamily="@font/porkh"
-            android:text="@string/enter_your_password" />
+            android:text="@string/enter_your_password"
+            android:textSize="32dp" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword"
-            android:text="@string/password" />
+            android:inputType="textPassword" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_height="match_parent"
+            android:id="@+id/nextbutton"
             android:layout_width="match_parent"
-            android:text="@string/next"/>
+            android:layout_height="match_parent"
+            android:background="@drawable/button_style_white"
+            android:text="@string/next" />
 
 
     </LinearLayout>
-    >
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duck_outlined" />
 
 
 

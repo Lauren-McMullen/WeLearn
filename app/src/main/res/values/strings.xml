@@ -7,7 +7,7 @@
     <string name="let_s_learn_together">Let\'s Learn Together!</string>
     <string name="welearn">WeLearn</string>
     <string name="welcome_back_header">Welcome Back, Hedie!</string>
-    <string name="view_my_progress">View my Progress</string>
+    <string name="view_my_progress">V i ew my Progress</string>
     <string name="learn">Learn</string>
     <string name="teach">teach</string>
     <string name="enter_your_username">Enter your username</string>
@@ -17,5 +17,21 @@
     <string name="next">Next</string>
     <string name="title_activity_test">test</string>
     <string name="title_activity_test.xml">test.xml</string>
+    <string name="coding_basics">Coding Basics</string>
+    <string name="logic">Logic</string>
+    <string name="data_structures">Data Structures</string>
+    <string name="systems">Systems</string>
+    <string name="machine_learning">Machine Learning</string>
+    <string name="databases">Databases</string>
+    <string name="security">Security</string>
+    <string name="software_development">Software Development</string>
+    <string name="networks">Networks</string>
+    <string name="algorithms">Algorithms</string>
+    <string name="data_visualization">Data Visualization</string>
+    <string name="teaching_level">Teaching Level</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="thank_you_for_using_our_demo">Thank you for using our demo</string>
 
 </resources>
