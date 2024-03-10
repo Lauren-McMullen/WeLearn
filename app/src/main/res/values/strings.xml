@@ -15,4 +15,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="next">Next</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_test.xml">test.xml</string>
+
 </resources>
