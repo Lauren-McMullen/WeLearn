@@ -34,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button signup = (Button) findViewById(R.id.signupbutton);
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChooseRoleActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }
