@@ -27,7 +27,7 @@
             app:srcCompat="@drawable/pink_blob" />
 
         <Button
-            android:id="@+id/loginbutton"
+            android:id="@+id/signupbutton"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_marginStart="84dp"
@@ -46,7 +46,7 @@
             app:strokeWidth="1dp" />
 
         <Button
-            android:id="@+id/signupbutton"
+            android:id="@+id/loginbutton"
             android:layout_width="wrap_content"
             android:layout_height="53dp"
             android:layout_marginStart="150dp"
