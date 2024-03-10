@@ -10,4 +10,6 @@
     <string name="view_my_progress">View my Progress</string>
     <string name="learn">Learn</string>
     <string name="teach">teach</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_test.xml">test.xml</string>
 </resources>
