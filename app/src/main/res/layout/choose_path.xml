@@ -7,12 +7,16 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/GreenBlob"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,161 +46,161 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.05"  />
+            app:layout_constraintVertical_bias="0.05" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ConstraintLayout2"
-        android:layout_width="match_parent"
+        android:layout_width="234dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:rotationY="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <ImageView
             android:id="@+id/duckie"
             android:layout_width="176dp"
             android:layout_height="172dp"
-            app:srcCompat="@drawable/duck_outlined"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="125dp" />
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/duck_outlined" />
 
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="@+id/duckie"
-            app:layout_constraintStart_toStartOf="@+id/duckie"
-            app:srcCompat="@drawable/books"
-            tools:layout_editor_absoluteY="152dp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/duckie"
+            app:srcCompat="@drawable/books" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/BadgeTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="240dp"
-        android:fontFamily="@font/porkh"
-        android:text="@string/recent_badges"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ButtonLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <HorizontalScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="413dp"
-        android:layout_height="138dp"
-        android:layout_marginTop="8dp"
-        android:scrollbars="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BadgeTitle">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/BadgeTitle"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:fontFamily="@font/porkh"
+            android:text="@string/recent_badges"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/badge1"
-                android:layout_width="match_parent"
+        <HorizontalScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BadgeTitle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/green_badge" />
+                android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/badge2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/pink_badge" />
+                <ImageView
+                    android:id="@+id/badge1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/green_badge" />
 
-            <ImageView
-                android:id="@+id/badge3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/blue_badge" />
+                <ImageView
+                    android:id="@+id/badge2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/pink_badge" />
 
-            <ImageView
-                android:id="@+id/badge4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/green_badge" />
+                <ImageView
+                    android:id="@+id/badge3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/blue_badge" />
 
-            <ImageView
-                android:id="@+id/badge5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/pink_badge" />
+                <ImageView
+                    android:id="@+id/badge4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/green_badge" />
 
-            <ImageView
-                android:id="@+id/badge6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/blue_badge" />
+                <ImageView
+                    android:id="@+id/badge5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/pink_badge" />
 
-            <ImageView
-                android:id="@+id/badge7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/green_badge" />
+                <ImageView
+                    android:id="@+id/badge6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/blue_badge" />
 
-            <ImageView
-                android:id="@+id/badge8"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/pink_badge" />
+                <ImageView
+                    android:id="@+id/badge7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/green_badge" />
 
-            <ImageView
-                android:id="@+id/badge9"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/Welcometext"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/blue_badge" />
+                <ImageView
+                    android:id="@+id/badge8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/pink_badge" />
+
+                <ImageView
+                    android:id="@+id/badge9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/blue_badge" />
 
 
-        </LinearLayout>
-    </HorizontalScrollView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ButtonLayout"
@@ -209,7 +213,7 @@
             android:id="@+id/progress_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="80dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/button_style_pink"
             android:fontFamily="@font/porkh"
             android:text="@string/view_my_progress"
@@ -232,13 +236,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.80" />
+            app:layout_constraintVertical_bias="0.85" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/teach_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/button_style_pink"
             android:fontFamily="@font/porkh"
             android:text="@string/teach"
