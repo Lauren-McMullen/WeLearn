@@ -26,20 +26,23 @@
         android:id="@+id/loginbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
         android:text="@string/Login"
-        android:backgroundTint="#F3B7AC"
+        android:radius="0dp"
         app:layout_constraintBottom_toTopOf="@+id/signupbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Welcometext" />
 
+
+
     <Button
         android:id="@+id/signupbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
         android:layout_marginBottom="196dp"
         android:text="@string/sign_up"
-        android:backgroundTint="#F3B7AC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

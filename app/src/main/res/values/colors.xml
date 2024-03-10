@@ -2,10 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-<!--    <color name="ducky">#F8B042</color>-->
-<!--    <color name="green">#9DBDBA</color>-->
-<!--    <color name="blue">#93AEC1</color>-->
-<!--    <color name="red">#FEC6A52</color>-->
-<!--    <color name="pink">#F3B7AC</color>-->
+    <color name="ducky">#FFF8B042</color>
+    <color name="green">#FF9DBDBA</color>
+    <color name="blue">#FF93AEC1</color>
+    <color name="red">#FFEC6A52</color>
+    <color name="pink">#FFF3B7AC</color>
 
 </resources>
