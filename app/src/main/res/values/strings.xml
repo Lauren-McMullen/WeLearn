@@ -3,4 +3,7 @@
     <string name="HomeWelcomeText">Welcome to WeLearn</string>
     <string name="Login">Login</string>
     <string name="sign_up">Sign Up</string>
+    <string name="recent_badges">Recent Badges</string>
+    <string name="let_s_learn_together">Let\'s Learn Together!</string>
+    <string name="welearn">WeLearn</string>
 </resources>
