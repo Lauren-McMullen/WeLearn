@@ -7,18 +7,13 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/GreenBlob"
-            android:layout_width="407dp"
-            android:layout_height="448dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -28,20 +23,12 @@
             android:id="@+id/chalkboard"
             android:layout_width="163dp"
             android:layout_height="218dp"
-            android:layout_marginTop="100dp"
-            app:layout_constraintEnd_toEndOf="@+id/GreenBlob"
-            app:layout_constraintTop_toTopOf="@+id/GreenBlob"
-            app:srcCompat="@drawable/black_board_svgrepo_com_1" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="130dp"
-            android:layout_marginEnd="120dp"
+            android:layout_marginTop="88dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/GreenBlob"
-            app:srcCompat="@drawable/books" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/GreenBlob"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/black_board_svgrepo_com_1" />
 
         <TextView
             android:id="@+id/Welcome_back_header"
@@ -49,11 +36,39 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/porkh"
             android:text="@string/welcome_back_header"
+            android:textColor="@color/black"
             android:textSize="32sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"  />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/duckie"
+            android:layout_width="176dp"
+            android:layout_height="172dp"
+            app:srcCompat="@drawable/duck_outlined"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/duckie"
+            app:layout_constraintStart_toStartOf="@+id/duckie"
+            app:srcCompat="@drawable/books"
+            tools:layout_editor_absoluteY="152dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -68,6 +83,8 @@
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ButtonLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -176,14 +193,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/blue_badge" />
 
-            <ImageView
-                android:id="@+id/duckie"
-                android:layout_width="176dp"
-                android:layout_height="172dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="144dp"
-                app:srcCompat="@drawable/duck_outlined" />
-
 
         </LinearLayout>
     </HorizontalScrollView>
@@ -193,9 +202,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-45dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/progress_button"
