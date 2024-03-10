@@ -14,6 +14,15 @@ public class AppUsers {
         allUsers.add(toAdd);
     }
 
+    public User findCurrentUser(String username) {
+        for(User u: allUsers) {
+            if (u.getUsername().equals(username)) {
+                return u;
+            }
+        }
+        return null;
+    }
+
 
 
 }
