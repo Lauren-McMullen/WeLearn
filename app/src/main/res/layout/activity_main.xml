@@ -27,7 +27,7 @@
             app:srcCompat="@drawable/pink_blob" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/loginbutton"
+            android:id="@+id/signupbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="84dp"
@@ -43,7 +43,7 @@
             app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/signupbutton"
+            android:id="@+id/loginbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
