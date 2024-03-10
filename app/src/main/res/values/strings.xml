@@ -7,4 +7,7 @@
     <string name="let_s_learn_together">Let\'s Learn Together!</string>
     <string name="welearn">WeLearn</string>
     <string name="welcome_back_header">Welcome Back!</string>
+    <string name="view_my_progress">View my Progress</string>
+    <string name="learn">Learn</string>
+    <string name="teach">teach</string>
 </resources>
