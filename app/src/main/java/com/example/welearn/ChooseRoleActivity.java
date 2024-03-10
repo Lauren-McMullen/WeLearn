@@ -34,6 +34,27 @@ public class ChooseRoleActivity extends AppCompatActivity {
             }
         });
 
+        Button learn = (Button) findViewById(R.id.learn_button);
+
+        learn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ChooseRoleActivity.this, StudentSetupActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button progress = (Button) findViewById(R.id.progress_button);
+
+        progress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ChooseRoleActivity.this, ProgressActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
 

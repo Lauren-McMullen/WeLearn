@@ -22,7 +22,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    AppUsers appUsers = new AppUsers();
+    private AppUsers appUsers = new AppUsers();
+    private User currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ChooseRoleActivity.class);
                 startActivity(intent);
+                currentUser = appUsers.findCurrentUser("Hedie");
             }
         });
 
@@ -53,11 +55,28 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ChooseRoleActivity.class);
                 startActivity(intent);
+                currentUser = appUsers.findCurrentUser("QueenB");
             }
         });
 
 
 
+    }
+
+    public AppUsers getAppUsers() {
+        return appUsers;
+    }
+
+    public void setAppUsers(AppUsers appUsers) {
+        this.appUsers = appUsers;
+    }
+
+    public User getCurrentUser() {
+        return currentUser;
+    }
+
+    public void setCurrentUser(User currentUser) {
+        this.currentUser = currentUser;
     }
 
     private void init_test_user() {

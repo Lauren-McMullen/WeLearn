@@ -10,4 +10,9 @@
     <string name="view_my_progress">View my Progress</string>
     <string name="learn">Learn</string>
     <string name="teach">teach</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="next">Next</string>
 </resources>
