@@ -1,5 +1,6 @@
 package com.example.welearn;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,9 +26,12 @@ public class MainActivity extends AppCompatActivity {
     private AppUsers appUsers = new AppUsers();
     private User currentUser;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        init_test_user();
+        //init_test_user();
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -37,16 +41,17 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+
         Button login = (Button) findViewById(R.id.loginbutton);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ChooseRoleActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
-                currentUser = appUsers.findCurrentUser("Hedie");
             }
         });
+
 
         Button signup = (Button) findViewById(R.id.signupbutton);
 
@@ -55,46 +60,37 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ChooseRoleActivity.class);
                 startActivity(intent);
-                currentUser = appUsers.findCurrentUser("QueenB");
             }
         });
 
 
 
+
+
+
     }
 
-    public AppUsers getAppUsers() {
-        return appUsers;
+    private void CreateDialogwindow() {
+
+        //Dialog dialog = new Dialog(this);
+        //dialog.setContentView(R.layout.login_dialog);
+        //dialog.setCancelable(false);
+
+
+        Button nextbtn = (Button) findViewById(R.id.nextbutton);
+
+
+        nextbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChooseRoleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //dialog.show();
+
     }
 
-    public void setAppUsers(AppUsers appUsers) {
-        this.appUsers = appUsers;
-    }
 
-    public User getCurrentUser() {
-        return currentUser;
-    }
-
-    public void setCurrentUser(User currentUser) {
-        this.currentUser = currentUser;
-    }
-
-    private void init_test_user() {
-
-        User test_teacher = new User("SeanF", "secret",
-                "Sean", "Ford");
-        appUsers.addUser(test_teacher);
-        User test_student = new User("QueenB", "superSecret",
-                "Hedie", "Mahmoudian");
-        appUsers.addUser(test_student);
-        Session session1 = new Session(topic.CODING_BASICS, month.MARCH, 7, 2024, 5,
-                test_teacher, new ArrayList<>(), level.ADVANCED);
-        session1.addStudent(test_student);
-        Session session2 = new Session(topic.DATA_STRUCTURES, month.MARCH, 7, 2024, 5,
-                test_teacher, new ArrayList<>(), level.BEGINNER);
-        session2.addStudent(test_student);
-        Session session3 = new Session(topic.LOGIC, month.MARCH, 7, 2024, 5,
-                test_teacher, new ArrayList<>(), level.INTERMEDIATE);
-        session3.addStudent(test_student);
-    }
 }

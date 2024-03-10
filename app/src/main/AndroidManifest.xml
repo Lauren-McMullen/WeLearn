@@ -25,6 +25,10 @@
         <activity android:name=".TeachSetupActivity" />
         <activity android:name=".StudentSetupActivity" />
         <activity android:name=".ProgressActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".TeacherLevelActivity" />
+        <activity android:name=".StudentLevelActivity" />
+
     </application>
 
 </manifest>

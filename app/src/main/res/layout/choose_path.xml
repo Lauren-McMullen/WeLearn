@@ -213,7 +213,7 @@
             android:id="@+id/progress_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/button_style_pink"
             android:fontFamily="@font/porkh"
             android:text="@string/view_my_progress"

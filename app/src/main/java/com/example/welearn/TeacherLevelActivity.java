@@ -11,53 +11,45 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ChooseRoleActivity extends AppCompatActivity {
+public class TeacherLevelActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.choose_path);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.choose_path), (v, insets) -> {
+        setContentView(R.layout.teacher_level_overlay);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.teacher_level_overlay), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button teach = (Button) findViewById(R.id.teach_button);
+        Button beginner = (Button) findViewById(R.id.beginnerbuttonteach);
+        Button inter = (Button) findViewById(R.id.intermediatebuttonteach);
+        Button advanced = (Button) findViewById(R.id.advancedbuttonteach);
 
-        teach.setOnClickListener(new View.OnClickListener() {
+        beginner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChooseRoleActivity.this, TeachSetupActivity.class);
-                startActivity(intent);
+                setContentView(R.layout.end_demo);
             }
         });
 
-        Button learn = (Button) findViewById(R.id.learn_button);
-
-        learn.setOnClickListener(new View.OnClickListener() {
+        inter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChooseRoleActivity.this, StudentSetupActivity.class);
-                startActivity(intent);
+                setContentView(R.layout.end_demo);
             }
         });
 
-        Button progress = (Button) findViewById(R.id.progress_button);
-
-        progress.setOnClickListener(new View.OnClickListener() {
+        advanced.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(ChooseRoleActivity.this, ProgressActivity.class);
-//                startActivity(intent);
                 setContentView(R.layout.end_demo);
             }
         });
 
 
-
-
-
     }
+
 }
