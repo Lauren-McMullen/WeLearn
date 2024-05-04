@@ -13,6 +13,10 @@ WeLearn is a accessbile tutoring Android mobile application prototype created fo
 
 At WeLearn, we believe that we never stop learning, and that everyone has knowledge worth sharing. 
 
+## 🖥️ Tech Stack
+
+WeLearn was build using Java and Android Studio. Our prototype was created using Figma.
+
 ## 📔 WeLearn Student Experience
 
 ![WeLearn-UserFlow](https://github.com/Lauren-McMullen/WeLearn/assets/80228594/5018b76f-1044-40fa-a7d3-5631c01b4422)
