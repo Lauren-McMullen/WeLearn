@@ -15,7 +15,7 @@ At WeLearn, we believe that we never stop learning, and that everyone has knowle
 
 ## 🖥️ Tech Stack
 
-WeLearn was build using Java and Android Studio. We selected Android Studio as our IDE due to its popularity in industry and its ability to use Gradle to help us avoid any build problems while under a tight deadline during a hackathon. We picked Java over Kotlin since the development team had previous experience programming in Java, and we wanted to use the hackathon as an opportunity to learn about mobile development without worrying about learning a new language at the same time.
+WeLearn was build using Java and Android Studio. We selected Android Studio as our IDE due to its popularity in industry and its ability to use Gradle to help us avoid any build problems while under a tight deadline during a hackathon. We picked Java over Kotlin since the development team had previous experience programming in Java, and we wanted to use the hackathon as an opportunity to learn about mobile development without worrying about learning a new language at the same time. The GUI uses the Compose framework.
 
 Our prototype was created using Figma. The design of WeLearn was inspired by Duolingo - we wanted to create a fun and clean GUI that felt engaging and memorable.
 
