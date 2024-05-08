@@ -17,7 +17,7 @@ At WeLearn, we believe that we never stop learning, and that everyone has knowle
 
 WeLearn was build using Java and Android Studio. Our prototype was created using Figma.
 
-## 📔 WeLearn User Flow
+## 📔 WeLearn Basic User Flow
 
 ![WeLearn-UserFlow](https://github.com/Lauren-McMullen/WeLearn/assets/80228594/5018b76f-1044-40fa-a7d3-5631c01b4422)
 
